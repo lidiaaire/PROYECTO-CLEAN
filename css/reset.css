@@ -1,0 +1,17 @@
+*:where( :not(html, iframe, canvas, img, svg, video, audio) :not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;    
+}
