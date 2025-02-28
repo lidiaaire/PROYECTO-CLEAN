@@ -1,36 +1,37 @@
 .section1 {
     display: flex;
-    background-color: #1A1D24; 
-    padding: 15px 50px; /* Ajusta el padding para que el contenido no se desplace */
-    justify-content: flex-end; /* Alinea todo a la derecha */
-    align-items: flex-end; /* Asegura que estén en la misma línea */
-    gap: 30px; /* Espaciado entre el sidebar y el box de texto */
+    background-color: #1A1D24;
+    padding: 15px 50px;
+    justify-content: space-between; /* Mantiene separación entre imagen y sidebar */
+    align-items: flex-start; /* Asegura que el sidebar suba */
     width: 100%;
-
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permite que el sidebar y la imagen no se sobrepongan */
 }
+
 .principal-page {
-    width: auto; /* En lugar de 100% */
-    max-width: 850px; /* Limita el ancho */
+    width: 65%; /* Ajustado para que la imagen no sea tan grande */
+    max-width: 800px;
     position: relative;
-    overflow: hidden; /* Evita que se desborde */
+    overflow: hidden;
 }
 
 .principal-page img {
-    width: 100%; /* Hace que la imagen se adapte al contenedor */
-    height: auto; /* Mantiene la proporción */
-    object-fit: cover; /* Evita distorsión */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
-
 
 
 /*TEXTO TYLER CAJA */
 
 .principal-text {
     position: absolute;
-    bottom: 20px;
-    right: 20px; /* Ahora no se sobrepone al sidebar */
+    bottom: 30px;
+    left: 20px;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 17px 21px;
+    padding: 20px;
     max-width: 350px;
     text-align: left;
 }
@@ -70,8 +71,7 @@
 .content-container {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Antes estaba en flex-end */
-    gap: 20px;
+    align-items: flex-start;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -81,42 +81,39 @@
 /*NOTICIAS DERECHA */
 
 .sidebar {
-    width: 220px;
-    max-width: 250px;
-    max-height: 500px;
-    overflow-y: auto;
-    margin-top: -20px; /* Sube el sidebar */
+    width: 30%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-
 
 .sidebar h3 {
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 /*LINEA ROJA */
 
 .sidebar h3::after {
     content: "";
-    display: inline-block;
-    width: 40px; 
-    height: 1px; 
-    background-color: red; 
-    margin-left: 10px; 
-    position: relative;
-    top: -5px; 
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: red;
+    margin-top: 5px;
 }
 
 .news-item {
     display: flex;
     align-items: center;
-    gap: 20px;   
-    margin-top: 10%;
-    margin-bottom: 10%;
+    gap: 15px;
+    margin-bottom: 10px;
 }
 
 .news-item img {
-    width: 100px;
+    width: 80px;
     height: auto;
 }
 
