@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 20px;
+    padding: 0 20px; 
     gap: 10px; /* Reduce el espacio entre las secciones */
     width: 100%;
     max-width: 1200px;
@@ -20,9 +20,10 @@
 }
 
 .principal-page img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%;              /* Hace que ocupe todo el ancho disponible */
+    max-height: 500px;        /* Ajusta la altura máxima */
+    object-fit: cover;        /* Hace que la imagen cubra el área sin distorsionarse */
+    object-position: center;  /* Centra la imagen */
 }
 
 
@@ -31,7 +32,7 @@
 .principal-text {
     position: absolute;
     bottom: 30px;
-    left: 20px;  /* Ajuste para mover el texto más a la derecha */
+    margin-left: 20px;  /* Ajuste para mover el texto más a la derecha */
     right: 20px;  /* Ajuste del espacio a la derecha */
     max-width: 350px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -90,6 +91,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 30px;
 }
 
 .sidebar h3 {

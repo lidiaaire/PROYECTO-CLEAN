@@ -4,15 +4,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;  /* Reducido para que sea más compacto */
-    padding: 10px 15px;  /* Menor padding para que no haya tanto espacio */
+    max-width: 1200px;  /* Establece un ancho máximo */
+    height: 200px;  /* Reducido para que sea más compacto */
+    margin: 0 auto;     /* Centra el encabezado */
+    padding: 10px 20px; /* Ajusta el padding */
+    margin-bottom: -50px;  
     background-color: #1A1D24;
 }
 
 
 /* LOGO FILMAX */
 .logo img {
-    max-height: 14px; /* Reduce aún más */
+    max-height: 25px; /* Reduce aún más */
     width: auto;
     font-size: 2rem;
 }
@@ -21,11 +24,11 @@
 
 .menu ul {
     display: flex;
-    gap: 5px;
+    gap: 25px;
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .menu ul li a {
@@ -44,12 +47,13 @@
 .icons {
     display: flex;
     align-items: center;
-    gap: 10px; /* Alineación ajustada */
+    gap: 35px; /* Alineación ajustada */
     color: #fff;
 }
 .icons svg {
-    width: 14px;/* Cambié el tamaño de la lupa a 12px */
-    height: 14px;
+
+    width: 20px;/* Cambié el tamaño de la lupa a 12px */
+    height: 20 px;
 }
 
 
@@ -71,11 +75,11 @@
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 8px;
+    gap: 10px;
     color: #fff;
 
 }
 .RS svg {
-    width: 16px; /* Tamaño más pequeño */
-    height: 16px;
+    width: 20px; /* Tamaño más pequeño */
+    height: 20px;
 }
