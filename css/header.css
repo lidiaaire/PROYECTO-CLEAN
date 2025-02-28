@@ -50,6 +50,11 @@
 
 
 }
+.icons svg {
+    width: 15px;/* Cambié el tamaño de la lupa a 12px */
+    height: 15px;* Cambié el tamaño de la lupa a 12px */
+}
+
 
 .icons svg path {
     width: 5px; /* Tamaño más pequeño */
