@@ -83,29 +83,31 @@
     margin-left: 30px;
     align-items: flex-start;
 }
-
-.sidebar h3 {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-size: 24px;
-    position: relative;
-    display: inline-block; /* Cambiado de flex a inline-block para ajustarlo mejor al texto */
-    margin-left: 0;  /* Ajuste para reducir el espacio al lado izquierdo */
-    padding-right: 20px;  /* Ajusta el espacio del lado derecho para la alineación */
+.sidebar-title {
+    display: flex;
+    align-items: flex-start; /* Alinea la línea roja con la parte superior del texto */
+    gap: 10px; /* Espacio entre el texto y la línea roja */
 }
 
-/* Asegúrate de que la línea roja esté alineada correctamente */
-.sidebar h3::after {
+/* Estilo para el texto "RECENT NEWS" */
+.sidebar-title h3 {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+    margin: 0;
+    padding: 0;
+}
+
+/* Línea roja alineada arriba */
+.sidebar-title::after {
     content: "";
     display: block;
-    width: 50%; /* Aumenta el ancho de la línea para que ocupe más espacio */
-    height: 2px;
-    background-color: red;
-    margin-top: 5px;
-    margin-left: 0;  /* Asegura que la línea se alinee justo debajo del texto */
+    width: 50px; /* Ajusta el ancho de la línea */
+    height: 3px; /* Grosor de la línea */
+    background-color: red; /* Color de la línea */
+    align-self: flex-start; /* Alinea la línea con la parte superior del contenedor */
+    margin-top: 5px; /* Ajusta la distancia entre la línea y el texto */
 }
-
 .news-item {
     display: flex;
     align-items: center;
