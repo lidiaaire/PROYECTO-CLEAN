@@ -90,19 +90,20 @@
     margin-bottom: 10px;
     font-size: 24px;
     position: relative;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .sidebar h3::after {
     content: "";
     display: block;
-    width: 100%; /* Utilizamos 100% para asegurarnos de que la línea se extienda completamente */
+    width: 100%; /* Esto asegurará que la línea ocupe todo el ancho del contenedor */
     height: 2px;
     background-color: red;
     margin-top: 5px;
-    margin-left: 0; /* Elimina el margen izquierdo */
-    margin-right: 0; /* Elimina el margen derecho */
+    margin-left: 0;
+    margin-right: 0;
 }
-
 .news-item {
     display: flex;
     align-items: center;
