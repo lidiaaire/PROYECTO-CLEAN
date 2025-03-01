@@ -24,19 +24,18 @@
 
 .menu ul {
     display: flex;
-    gap: 10px; /* Reduce el espacio entre los elementos */
-    justify-content: center;
+    justify-content: space-between;
+    list-style: none;
     padding: 0;
-    list-style-type: none;
     margin: 0;
-    color: #fff;
-    font-size: 18px;
+    gap: 2px; /* Ajusta el espacio entre los elementos del menú */
 }
 
 .menu li {
     margin: 0 10px;
     position: relative;
-    font-size: 16px; /* Ajusta la distancia entre los elementos del menú */
+    font-size: 12px; /* Ajusta la distancia entre los elementos del menú */
+    font-weight: bold;
 }
 .menu ul li a {
     color: #fff;
@@ -63,51 +62,47 @@
 }
 
 
-/*ICONOS DERECHA */
-
+/* ICONOS DERECHA */
 .icons {
     display: flex;
     align-items: center;
-    gap: 35px; /* Alineación ajustada */
+    justify-content: flex-start; /* Asegura que los iconos estén alineados a la izquierda */
+    gap: 15px; /* Ajusta la distancia entre los iconos */
     color: #fff;
 }
 
 .icons svg {
-    width: 28px;  /* Ajusta el tamaño del icono */
-    height: 28px;
-    margin-right: 20px;  /* Espacio entre los iconos */
+    width: 20px;  /* Tamaño ajustado del icono */
+    height: 20px;
+    margin: 0;  /* Elimina el margen entre los iconos */
+    transition: color 0.3s ease; /* Transición suave al cambiar el color */
+    fill: currentColor; /* Usamos currentColor para heredar el color del texto */
 }
 
-.menu ul li.separator {
+/* Efecto al pasar el cursor */
+.icons svg:hover {
+    color: red; /* Cambia este color por el que desees para el hover */
+    cursor: pointer; /* Cambia el cursor cuando pase sobre el icono */
+}
+
+
+    .icons span {
     display: inline-block;
-    padding: 0 10px;
+    height: 20px;
     color: #fff;
 }
 
-
-.icons svg path {
-    width: 5px; /* Tamaño más pequeño */
-    height: 5px;
-    max-height: 14px;
-    width: auto;
-    fill: #fff ;
-
-}
-
-.icons, .RS ul {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+/* RS (redes sociales) */
 .RS ul {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 10px;
+    gap: 15px; /* Espacio uniforme entre los íconos */
     color: #fff;
-
 }
+
 .RS svg {
-    width: 20px; /* Tamaño más pequeño */
+    width: 20px; /* Tamaño de los iconos */
     height: 20px;
+    color: #fff;
 }

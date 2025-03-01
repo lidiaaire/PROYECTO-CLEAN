@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 0 20px; 
-    gap: 10px; /* Reduce el espacio entre las secciones */
+    gap: 20px; /* Reduce el espacio entre las secciones */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -11,7 +11,7 @@
 }
 
 .principal-page {
-    width: 50%;  /* Ajuste para que ocupe el 50% del espacio */
+    width: 65%;  /* Ajuste para que ocupe el 50% del espacio */
     flex: 1 1 60%; /* Ajuste para ocupar más espacio */
     max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
     position: relative;
@@ -21,7 +21,7 @@
 .principal-page img {
     width: 100%;
     height: auto;
-    max-height: 600px;
+    max-height: 600px; /* Limita la altura máxima */
     object-fit: cover;
     object-position: center;
 }
@@ -29,9 +29,9 @@
 .principal-text {
     position: absolute;
     bottom: 30px;
-    left: 100px; /* Mueve más a la derecha */
-    right: 20px;
-    max-width: 450px;
+    left: 30px; /* Mueve más a la derecha */
+    right: 0px;
+    max-width: 500px;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: left;
@@ -73,9 +73,9 @@
 /*NOTICIAS DERECHA */
 
 .sidebar {
-    width: 30%; /* Ajuste de tamaño */
-    flex: 0 0 30%;
-    max-width: 350px;
+    width: 100%; /* Asegúrate de que ocupe todo el espacio disponible */
+    flex: 1; /* Ajusta para que el sidebar ocupe el espacio máximo posible */
+    max-width: 350px; /* Este sigue siendo el límite */
     height: auto;
     display: flex;
     flex-direction: column;
@@ -88,12 +88,13 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     font-size: 24px;
+    position: relative;
 }
 
 .sidebar h3::after {
     content: "";
     display: block;
-    width: 40px;
+    width: 100%; /* Esto hará que la línea ocupe el 100% del ancho del h3 */
     height: 2px;
     background-color: red;
     margin-top: 5px;
