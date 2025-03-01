@@ -2,12 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 20px; 
-    gap: 20px; /* Reduce el espacio entre las secciones */
+    padding: 0 20px;
+    gap: 30px; /* Añadido espacio entre los elementos */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 .principal-page {
@@ -69,13 +68,15 @@
     margin: 0 auto;
 }
 
+.section1 .main-text {
+    max-width: 65%; /* Ajustar el texto para que quede más hacia la derecha */
+}
 
 /*NOTICIAS DERECHA */
 
 .sidebar {
-    width: 100%; /* Asegúrate de que ocupe todo el espacio disponible */
-    flex: 1; /* Ajusta para que el sidebar ocupe el espacio máximo posible */
-    max-width: 350px; /* Este sigue siendo el límite */
+    width: 100%;
+    max-width: 350px; /* Ajuste para mantener el tamaño adecuado */
     height: auto;
     display: flex;
     flex-direction: column;
@@ -94,10 +95,12 @@
 .sidebar h3::after {
     content: "";
     display: block;
-    width: 100%; /* Esto hará que la línea ocupe el 100% del ancho del h3 */
+    width: 100%; /* Utilizamos 100% para asegurarnos de que la línea se extienda completamente */
     height: 2px;
     background-color: red;
     margin-top: 5px;
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: 0; /* Elimina el margen derecho */
 }
 
 .news-item {
