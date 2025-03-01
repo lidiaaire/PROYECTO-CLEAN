@@ -72,11 +72,13 @@
     gap: 35px; /* Alineación ajustada */
     color: #fff;
 }
-.icons svg {
 
-    width: 20px;/* Cambié el tamaño de la lupa a 12px */
-    height: 20 px;
+.icons svg {
+    width: 28px;  /* Ajusta el tamaño del icono */
+    height: 28px;
+    margin-right: 20px;  /* Espacio entre los iconos */
 }
+
 .menu ul li.separator {
     display: inline-block;
     padding: 0 10px;

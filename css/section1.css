@@ -11,31 +11,26 @@
 }
 
 .principal-page {
-    width: 60%; /* Ajustado para que la imagen no sea tan grande */
-    flex: 1 1 65%;  /* Ajuste para que ocupe el 65% del espacio */
-    max-width: 700px; /* Limitamos el tamaño máximo */
+    width: 50%;  /* Ajuste para que ocupe el 50% del espacio */
+    flex: 1 1 60%; /* Ajuste para ocupar más espacio */
+    max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
     position: relative;
     overflow: hidden;
-    max-width: 100%;
 }
 
 .principal-page img {
-    width: 100%;       
-    height: auto;       /* Hace que ocupe todo el ancho disponible */
-    max-height: 600px;        /* Ajusta la altura máxima */
-    object-fit: cover;        /* Hace que la imagen cubra el área sin distorsionarse */
-    object-position: center;  /* Centra la imagen */
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
 }
 
-
-/*TEXTO TYLER CAJA */
-
-/* Ajuste del texto de Tyler Perry */
 .principal-text {
     position: absolute;
     bottom: 30px;
-    left: 40px;  /* Desplazar hacia la derecha */
-    max-width: 350px;
+    left: 40px;  /* Mover el texto más a la derecha */
+    max-width: 450px;  /* Más espacio para el texto */
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: left;
