@@ -24,7 +24,7 @@
 
 .menu ul {
     display: flex;
-    gap: 5px;
+    gap: 5px; /* Reduce el espacio entre los elementos */
     justify-content: center;
     padding: 0;
     list-style-type: none;
@@ -33,14 +33,13 @@
     font-size: 18px;
 }
 
+.menu li {
+    margin: 0 10px;
+    position: relative;
+    font-size: 16px; /* Ajusta la distancia entre los elementos del menú */
+}
 .menu ul li a {
     color: #fff;
-}
-
-.menu li {
-    position: relative; /* Necesario para posicionar el cursor debajo del elemento */
-    margin: 0 20px;
-    font-size: 16px;
 }
 
 /* Estilo del cursor debajo del menú */

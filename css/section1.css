@@ -29,8 +29,9 @@
 .principal-text {
     position: absolute;
     bottom: 30px;
-    left: 40px;  /* Mover el texto más a la derecha */
-    max-width: 450px;  /* Más espacio para el texto */
+    left: 40px; /* Mover el texto más a la derecha */
+    right: 20px;  /* Se asegura de que el texto se ajuste más al lado derecho */
+    max-width: 450px;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: left;
@@ -39,6 +40,7 @@
 
 .principal-text h2 {
     font-size: 34px;
+    font-family: 'Arial', sans-serif;  /* Asegúrate de usar la misma fuente */
 }
 
 .principal-text p {
@@ -73,12 +75,12 @@
 .sidebar {
     width: 30%;
     flex: 0 0 30%;
-    max-width: 300px;  /* Ajusta para que sea más largo */
-    height: 100vh; /* Hace que el sidebar ocupe toda la altura */
+    max-width: 350px;  /* Ajusta el tamaño para que sea más largo */
+    height: auto; /* Ajusta la altura según el contenido */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     margin-left: 30px;
+    align-items: flex-start;
 }
 
 .sidebar h3 {
