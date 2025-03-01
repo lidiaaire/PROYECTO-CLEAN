@@ -29,8 +29,8 @@
 .principal-text {
     position: absolute;
     bottom: 30px;
-    left: 40px; /* Mover el texto más a la derecha */
-    right: 20px;  /* Se asegura de que el texto se ajuste más al lado derecho */
+    left: 100px; /* Mueve más a la derecha */
+    right: 20px;
     max-width: 450px;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -73,10 +73,10 @@
 /*NOTICIAS DERECHA */
 
 .sidebar {
-    width: 30%;
+    width: 30%; /* Ajuste de tamaño */
     flex: 0 0 30%;
-    max-width: 350px;  /* Ajusta el tamaño para que sea más largo */
-    height: auto; /* Ajusta la altura según el contenido */
+    max-width: 350px;
+    height: auto;
     display: flex;
     flex-direction: column;
     margin-left: 30px;
@@ -89,8 +89,6 @@
     margin-bottom: 10px;
     font-size: 24px;
 }
-
-/*LINEA ROJA */
 
 .sidebar h3::after {
     content: "";
