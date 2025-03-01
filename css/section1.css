@@ -90,20 +90,22 @@
     margin-bottom: 10px;
     font-size: 24px;
     position: relative;
-    display: flex;
-    justify-content: flex-start;
+    display: inline-block; /* Cambiado de flex a inline-block para ajustarlo mejor al texto */
+    margin-left: 0;  /* Ajuste para reducir el espacio al lado izquierdo */
+    padding-right: 20px;  /* Ajusta el espacio del lado derecho para la alineación */
 }
 
+/* Asegúrate de que la línea roja esté alineada correctamente */
 .sidebar h3::after {
     content: "";
     display: block;
-    width: 100%; /* Esto asegurará que la línea ocupe todo el ancho del contenedor */
+    width: 50%; /* Aumenta el ancho de la línea para que ocupe más espacio */
     height: 2px;
     background-color: red;
     margin-top: 5px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0;  /* Asegura que la línea se alinee justo debajo del texto */
 }
+
 .news-item {
     display: flex;
     align-items: center;
