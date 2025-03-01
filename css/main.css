@@ -1,4 +1,6 @@
 .principal {
     background-color: #1A1D24; /* O el color oscuro que se usa en la plantilla */
     position: relative;
+    max-width: 1200px; /* Puedes ajustarlo a tus necesidades */
+    margin: 0 auto;
 }

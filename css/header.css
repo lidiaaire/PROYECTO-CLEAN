@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;  /* Establece un ancho máximo */
-    height: 200px;  /* Reducido para que sea más compacto */
+    height: 270px;  /* Reducido para que sea más compacto */
     margin: 0 auto;     /* Centra el encabezado */
     padding: 10px 20px; /* Ajusta el padding */
     margin-bottom: -50px;  
@@ -15,7 +15,7 @@
 
 /* LOGO FILMAX */
 .logo img {
-    max-height: 25px; /* Reduce aún más */
+    max-height: 30px; /* Reduce aún más */
     width: auto;
     font-size: 2rem;
 }
@@ -24,23 +24,45 @@
 
 .menu ul {
     display: flex;
-    gap: 25px;
-    margin: 0;
+    gap: 5px;
+    justify-content: center;
     padding: 0;
+    list-style-type: none;
+    margin: 0;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .menu ul li a {
     color: #fff;
-
 }
 
-.menu ul li.separator {
-    display: inline-block;
-    padding: 0 5px;
-    color: #fff;
+.menu li {
+    position: relative; /* Necesario para posicionar el cursor debajo del elemento */
+    margin: 0 20px;
+    font-size: 16px;
 }
+
+/* Estilo del cursor debajo del menú */
+.menu li::after {
+    content: ''; /* Esto es necesario para que se muestre */
+    position: absolute;
+    bottom: -5px; /* Espacio debajo del texto */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Grosor del subrayado */
+    background-color: red; /* Color rojo del subrayado */
+    transform: scaleX(0); /* Comienza con un tamaño de 0 para que no se vea */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out; /* Transición suave para que el subrayado aparezca */
+}
+
+/* Cuando el usuario pasa el cursor sobre el menú */
+.menu li:hover::after {
+    transform: scaleX(1); /* Cuando el cursor pasa sobre el elemento, el subrayado se expande */
+    transform-origin: bottom left; /* El subrayado se expande de izquierda a derecha */
+}
+
 
 /*ICONOS DERECHA */
 
@@ -54,6 +76,11 @@
 
     width: 20px;/* Cambié el tamaño de la lupa a 12px */
     height: 20 px;
+}
+.menu ul li.separator {
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff;
 }
 
 
