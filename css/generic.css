@@ -3,13 +3,12 @@
 }
 
 body {
-    background-color: #1A1D24; /* Fuerza el fondo oscuro */
+    background-color: #1A1D24;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     padding: 0;
 }
-
 
 a {
     text-decoration: none;

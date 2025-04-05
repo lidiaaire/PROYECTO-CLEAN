@@ -1,0 +1,134 @@
+.section2 {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 350px;
+    margin: 20px auto;
+    margin-bottom: 40%;
+    position: relative;
+    background-color: #F2F2F2;
+}
+
+.nav-layout-box{
+    bottom: 380px;
+    position: absolute;
+    max-width: 1000px;
+    width: 1000px;
+}
+/* RECENT/MOST/BEST */
+
+.category {
+    width: 100%;
+    margin-bottom: 6%;
+    color: #A8A8A8;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: "roboto condensed" ,sans-serif;
+}
+
+.category span {
+    margin: 4px;
+}
+
+/*PELICULAS*/
+
+.trailer-movie {
+    position: absolute;
+    max-width: 1000px;
+    width: 100%;
+    bottom: 50px;
+}
+
+.trailer-movie section {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.photos-movie {
+    position: relative;
+    top: -107px;
+}
+.photos-separation {
+    position: relative;
+    width: 176px;
+    height: 240px;
+    overflow: hidden;
+}
+
+.photos-separation img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.same-size {
+    margin-top: 0%;
+    width: 100%;
+    height: 110%;
+    position: relative;
+    display: block;
+}
+
+/*TEXTO DE LA FOTO*/
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    height: 100%;
+    text-align: start;
+}
+
+.overlay h3 {
+    position: absolute;
+    bottom: 10px;
+    margin: 11px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.overlay section {
+    margin: 11px;
+    align-items: start;
+    font-size: 10px;
+    color: #A8A8A8;
+    margin-bottom: 0px;
+    gap: 5px;
+}
+
+/*PUNTOS ROJOS DESPUES DE IMAGENES*/
+
+.carousel-dots {
+    position: absolute;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    margin: 0px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.dot.active, .dot:hover  {
+    background-color: red;
+}

@@ -1,58 +1,81 @@
+/* HOMBRE + SIDEBAR + TYLER PERRY´S*/
+
 .section1 {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 20px;
-    gap: 30px; /* Añadido espacio entre los elementos */
+    padding: 0 20px 150px 0;
+    gap: 30px; 
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
+/* IMAGEN Y TYLER PERRY´S */
+
 .principal-page {
-    width: 65%;  /* Ajuste para que ocupe el 50% del espacio */
-    flex: 1 1 60%; /* Ajuste para ocupar más espacio */
-    max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
-    position: relative;
+    width: 65%;  
+    flex: 1 1 60%; 
+    max-width: 100%; 
     overflow: hidden;
 }
 
 .principal-page img {
     width: 100%;
     height: auto;
-    max-height: 600px; /* Limita la altura máxima */
+    max-height: 520px; 
     object-fit: cover;
     object-position: center;
 }
 
 .principal-text {
+    box-sizing: content-box;
+    top: 300px;
     position: absolute;
-    bottom: 30px;
-    left: 30px; /* Mueve más a la derecha */
+    left: 70%;
     right: 0px;
-    max-width: 500px;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    max-width: 498px;
+    background-color: #1A1D24;
+    padding: 20px 10px;
+    margin: 4%;
+    margin-left: 1%;
     text-align: left;
-    width: auto;
+    width: 350px;
+    height: 207px;
 }
 
 .principal-text h2 {
-    font-size: 34px;
-    font-family: 'Arial', sans-serif;  /* Asegúrate de usar la misma fuente */
+    font-size: 30px;
+    margin-top: 2px;
+    margin-left: 3px;
+    font-weight: bold; 
 }
 
 .principal-text p {
-    font-size: 15px;
-    color: rgb(84, 84, 84);
+    font-size: 13px;
+    color: #A8A8A8;
+    margin-top: 20px;
+    margin-left: 3px;
+
 }
 
 .principal-text a {
     display: inline-block;
-    margin-top: 10px; /* Espacio entre el texto y el botón */
+    margin-left: 3px;
+    margin-top: 30px;
     color: white;
     font-weight: bold;
     text-decoration: none;
+    font-size: 11px;
+}
+
+/* FLECHA ROJA READ MORE */
+.principal-text a::after{
+    content: " →"; 
+    color: red; 
+    font-weight: bold;
+    margin-left: 5px; 
 }
 
 .principal-text a:hover {
@@ -66,17 +89,14 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.section1 .main-text {
-    max-width: 65%; /* Ajustar el texto para que quede más hacia la derecha */
-}
+    position: relative;
+} 
 
 /*NOTICIAS DERECHA */
 
 .sidebar {
-    width: 100%;
-    max-width: 350px; /* Ajuste para mantener el tamaño adecuado */
+    width: 20%;
+    max-width: 350px; 
     height: auto;
     display: flex;
     flex-direction: column;
@@ -85,49 +105,56 @@
 }
 .sidebar-title {
     display: flex;
-    align-items: flex-start; /* Alinea la línea roja con la parte superior del texto */
-    gap: 10px; /* Espacio entre el texto y la línea roja */
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* Estilo para el texto "RECENT NEWS" */
 .sidebar-title h3 {
-    font-size: 24px;
+    font-size: 15px;
     font-weight: bold;
-    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+    white-space: nowrap; 
     margin: 0;
     padding: 0;
 }
 
-/* Línea roja alineada arriba */
-.sidebar-title::after {
+/* LINEA ROJA DE RECENT NEWS */
+.sidebar-title h3::after {
     content: "";
-    display: block;
-    width: 50px; /* Ajusta el ancho de la línea */
-    height: 3px; /* Grosor de la línea */
-    background-color: red; /* Color de la línea */
-    align-self: flex-start; /* Alinea la línea con la parte superior del contenedor */
-    margin-top: 5px; /* Ajusta la distancia entre la línea y el texto */
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: red;
+    align-self: flex-start;
+    margin: 5px;
+    margin-left: 15px;
 }
 .news-item {
     display: flex;
     align-items: center;
-    gap: 20px;  /* Aumenta el espacio entre la imagen y el texto */
-    margin-bottom: 20px;  /* Mayor separación entre las noticias */
+    gap: 10%;  
+    margin: 5%;
+    margin-bottom: 10px; 
+    width: 100%;
+
 }
 
 .news-item img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
 }
 
 .news-text p {
-    font-size: 14px;
+    font-size: 13px;
     color: #fff;
+    font-family: "Roboto Condensed" , sans-serif;
+    font-weight: bold;
 }
 
 .news-text span {
     color: gray;
+    font-size: 11px;
+    font-family: "Roboto Condensed" , sans-serif;
 }
 
 

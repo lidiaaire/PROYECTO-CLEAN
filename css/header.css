@@ -4,10 +4,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;  /* Establece un ancho máximo */
-    height: 270px;  /* Reducido para que sea más compacto */
-    margin: 0 auto;     /* Centra el encabezado */
-    padding: 10px 20px; /* Ajusta el padding */
+    max-width: 1200px; 
+    height: 240px; 
+    margin: 0 auto;     
+    padding: 10px 119px; 
     margin-bottom: -50px;  
     background-color: #1A1D24;
 }
@@ -15,9 +15,9 @@
 
 /* LOGO FILMAX */
 .logo img {
-    max-height: 30px; /* Reduce aún más */
+    max-height: 30px; 
     width: auto;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /* MENU PRINCIPAL */
@@ -26,15 +26,16 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 2px; /* Ajusta el espacio entre los elementos del menú */
+    margin: 0 56px;     
+    padding: 10px 100px;
+    gap: 5px; 
 }
 
 .menu li {
-    margin: 0 10px;
+    margin: 0 2px;
+    padding: 6px;
     position: relative;
-    font-size: 12px; /* Ajusta la distancia entre los elementos del menú */
+    font-size: 12px; 
     font-weight: bold;
 }
 .menu ul li a {
@@ -43,22 +44,24 @@
 
 /* Estilo del cursor debajo del menú */
 .menu li::after {
-    content: ''; /* Esto es necesario para que se muestre */
+    content: ''; 
     position: absolute;
-    bottom: -5px; /* Espacio debajo del texto */
+    bottom: -3px;
+    top: 27px;
     left: 0;
-    width: 100%;
-    height: 2px; /* Grosor del subrayado */
-    background-color: red; /* Color rojo del subrayado */
-    transform: scaleX(0); /* Comienza con un tamaño de 0 para que no se vea */
+    width: 95%;
+    height: 1px; 
+    background-color: red; 
+    transform: scaleX(0); 
     transform-origin: bottom right;
-    transition: transform 0.3s ease-out; /* Transición suave para que el subrayado aparezca */
+    transition: transform 0.3s ease-out; 
 }
 
-/* Cuando el usuario pasa el cursor sobre el menú */
+/* Cursor sobre el menú */
+
 .menu li:hover::after {
-    transform: scaleX(1); /* Cuando el cursor pasa sobre el elemento, el subrayado se expande */
-    transform-origin: bottom left; /* El subrayado se expande de izquierda a derecha */
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
 }
 
 
@@ -66,25 +69,25 @@
 .icons {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Asegura que los iconos estén alineados a la izquierda */
-    gap: 15px; /* Ajusta la distancia entre los iconos */
+    justify-content: flex-start; 
+    gap: 15px; 
     color: #fff;
 }
 
 .icons svg {
-    width: 20px;  /* Tamaño ajustado del icono */
+    width: 20px;  
     height: 20px;
-    margin: 0;  /* Elimina el margen entre los iconos */
-    transition: color 0.3s ease; /* Transición suave al cambiar el color */
-    fill: currentColor; /* Usamos currentColor para heredar el color del texto */
+    margin: 0;  
+    transition: color 0.3s ease; 
+    fill: currentColor;
 }
 
 /* Efecto al pasar el cursor */
-.icons svg:hover {
-    color: red; /* Cambia este color por el que desees para el hover */
-    cursor: pointer; /* Cambia el cursor cuando pase sobre el icono */
-}
 
+.icons svg:hover {
+    color: red; 
+    cursor: pointer; 
+}
 
     .icons span {
     display: inline-block;
@@ -92,17 +95,17 @@
     color: #fff;
 }
 
-/* RS (redes sociales) */
+/* Redes sociales */
 .RS ul {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 15px; /* Espacio uniforme entre los íconos */
+    gap: 15px; 
     color: #fff;
 }
 
 .RS svg {
-    width: 20px; /* Tamaño de los iconos */
+    width: 20px; 
     height: 20px;
     color: #fff;
 }
