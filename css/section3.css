@@ -1,7 +1,7 @@
 /*SAMURAI*/ 
 .section3 {
     position: relative;
-    height: 500px; /* ajusta según necesites */
+    min-height: 500px; /* Ajusta según sea necesario */
     background-image: url('C:\Users\lidia\OneDrive\Escritorio\REPOSITORIO\PROYECTO CLEAN\asset\images\bg_samurai.jpg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: flex-end;
     padding: 40px;
+    background-color: #f2f2f2;
     background-color: #fff; /* fondo base si no carga imagen */
 }
 
