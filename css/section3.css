@@ -2,14 +2,14 @@
 .section3 {
     position: relative;
     min-height: 500px; /* Ajusta según sea necesario */
-    background-image: url('C:\Users\lidia\OneDrive\Escritorio\REPOSITORIO\PROYECTO CLEAN\asset\images\bg_samurai.jpg');
-    background-size: contain;
+    background-image: url('../asset/images/bg_samurai.jpg');
     background-repeat: no-repeat;
     background-position: left center;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 40px;
+    bottom: 762px;
     background-color: #f2f2f2;
     background-color: #fff; /* fondo base si no carga imagen */
 }
@@ -17,53 +17,103 @@
 .overlay-content {
     position: relative;
     z-index: 2;
+    left: -20%;
     max-width: 600px;
     color: #222;
 }
 
+.section-subtitle {
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+  /* Línea roja encima */
+.section-subtitle::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 50px;
+    height: 1px;
+    background-color: #e50914;
+}
+
 .samurai-text , .new-release {
-    font-size: 12px;
-    color: crimson;
-    margin-bottom: 10px;
+    font-size: 13px;
+    color: grey ;
+    margin-bottom: 15px;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
 .samurai-text h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 60px;
     font-weight: bold;
 }
 .samurai-text .sub-info {
     font-size: 14px;
-    color: #777;
+    color: #222;
     margin-bottom: 20px;
 }
 
 .samurai-text .description {
     font-size: 15px;
+    letter-spacing: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #666666;
     line-height: 1.6;
     margin-bottom: 30px;
 }
 
-.buttons .btn {
-    display: inline-block;
-    margin-right: 15px;
-    padding: 10px 20px;
-    background-color: #eee;
-    color: #222;
+.buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
     text-decoration: none;
-    border-radius: 4px;
-    font-size: 14px;
-    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
 }
 
-.buttons .btn.red {
-    background-color: crimson;
-    color: #fff;
+  /* VIEW: SIEMPRE ROJO */
+.btn-view {
+    color: #e50914;
 }
 
-.buttons .btn:hover {
-    opacity: 0.8;
+.btn-view .icon i {
+    color: #e50914;
 }
 
+  /* WATCH: NEGRO por defecto */
+.btn-watch {
+    color: #000;
+}
+
+.btn-watch .icon i {
+    color: #000;
+}
+
+  /* WATCH: cambia a ROJO al pasar el mouse */
+.btn-watch:hover {
+    color: #e50914;
+}
+
+.btn-watch:hover .icon i {
+    color: #e50914;
+}
