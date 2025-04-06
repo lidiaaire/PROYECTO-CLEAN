@@ -77,53 +77,67 @@
     display: flex;
     gap: 30px;
     margin-top: 20px;
+    color: red;
 }
-
-.btn {
-    font-family: 'Roboto', sans-serif;
+.section3 .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 13px;
     text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
     transition: color 0.3s ease;
-    color: #fff; /* 👈 AÑADE ESTO */
 }
-.btn .icon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+
+.section3 .btn .icon {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background-color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-  /* VIEW: SIEMPRE ROJO */
-.btn-view {
+  /* --- Botón rojo: VIEW MORE --- */
+.section3 .btn-view {
     color: #e50914;
 }
 
-.btn-view .icon i {
+.section3 .btn-view .icon {
+    background-color: transparent;
+}
+
+.section3 .btn-view .icon i {
     color: #e50914;
 }
 
-  /* WATCH: NEGRO por defecto */
-.btn-watch {
+  /* --- Botón negro: WATCH TRAILER --- */
+.section3 .btn-watch {
     color: #000;
 }
 
-.btn-watch .icon i {
+.section3 .btn-watch .icon {
+    background-color: transparent;
+    border: 2px solid #000;
+}
+
+.section3 .btn-watch .icon i {
     color: #000;
 }
 
-  /* WATCH: cambia a ROJO al pasar el mouse */
-.btn-watch:hover {
+  /* Hover (opcional) */
+.section3 .btn-watch:hover {
     color: #e50914;
 }
 
-.btn-watch:hover .icon i {
+.section3 .btn-watch:hover .icon {
+    border-color: #e50914;
+}
+
+.section3 .btn-watch:hover .icon i {
     color: #e50914;
 }
