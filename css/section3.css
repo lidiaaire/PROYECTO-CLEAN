@@ -89,6 +89,16 @@
     align-items: center;
     gap: 8px;
     transition: color 0.3s ease;
+    color: #fff; /* 👈 AÑADE ESTO */
+}
+.btn .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #1c1c1c;
 }
 
   /* VIEW: SIEMPRE ROJO */
