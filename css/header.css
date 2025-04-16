@@ -2,14 +2,16 @@
 
 .header {
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px; 
-    height: 240px; 
-    margin: 0 auto;     
-    padding: 10px 119px; 
-    margin-bottom: -50px;  
+    height: 84px;
+    padding: 10px 258px;
+    margin-bottom: -50px;
     background-color: #1A1D24;
+
 }
 
 

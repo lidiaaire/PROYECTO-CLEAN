@@ -23,18 +23,23 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.4); /* efecto gris elegante */
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4); 
 }
 
 .movie-info {
-    position: relative;
+    position: absolute;
+    bottom: -73px;
     z-index: 2;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    transition: all 0.3s ease;
+}
+.movie-info:hover {
+    position: absolute;
+    bottom: 0px;
 }
 
 .movie-info .divider {
