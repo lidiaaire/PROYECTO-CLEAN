@@ -3,30 +3,29 @@
     position: relative;
     top: -762px;
     background-size: cover;
-    background-position: center;
+    background-position: left center;
     background-repeat: no-repeat;
-    position: relative;
-    color: white;
     padding: 100px 0;
+    color: white;
 }
 
 .section7::before {
+    content: none;
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.6);
     z-index: 0;
 }
 .container7 {
-    position: relative;
-    z-index: 1;
     display: flex;
-    gap: 60px;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    gap: 60px;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap;
+    padding: 0 30px;
+    position: relative;
+    z-index: 1;
 }
 
   /* Columna izquierda: fondo + texto encima */
@@ -42,32 +41,46 @@
 }
 
 .actor-left7::before {
+    content: none;
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* oscurecer fondo */
     z-index: 0;
 }
 
+.section7::before,
+.actor-left7::before {
+    display: none !important;
+}
 .actor-content7 {
-    position: relative;
-    z-index: 1;
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.65); /* <<< aquí está el truco */
+    content: none;
     border-radius: 8px;
+    padding: 40px;
+    z-index: 1;
     max-width: 500px;
 }
 
-
 .actor-content7 h2 {
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 1.1;
+    position: relative;
+    bottom: -14px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 3.75em !important;
+    line-height: 0.83em;
+    letter-spacing: -1px !important;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .actor-content7 p {
+    position: relative;
+    bottom: -32px;
+    font-family: "Lora", serif;
     margin: 20px 0;
-    color: #ccc;
+    color: #a8a8a8;
+    font-size: 1em;
+    letter-spacing: -0.3px;
+    line-height: 1.5em;
+    font-weight: 400;
 }
 
 .actor-content7 .quote {
@@ -77,12 +90,20 @@
 }
 
 .btn-view-bio {
+    right: -16px;
+    position: relative;
+    bottom: -40px;
     display: inline-block;
-    color: #ccc;
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 1.35em;
+    font-weight: 700;
+    font-style: normal;
     text-transform: uppercase;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    margin-top: 1.65em;
+    letter-spacing: 0;
+    display: inline-block;
+    font-family: "Roboto Condensed", sans-serif;
+    color:  #a8a8a8;
 }
 
 .btn-view-bio:hover {
