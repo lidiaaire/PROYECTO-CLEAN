@@ -13,6 +13,12 @@
     background-color: #f2f2f2;
     background-color: #fff; /* fondo base si no carga imagen */
 }
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
 
 .overlay-content {
     position: relative;

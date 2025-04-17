@@ -10,7 +10,12 @@
     position: relative;
     background-color: #F2F2F2;
 }
-
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
 .nav-layout-box{
     bottom: 380px;
     position: absolute;

@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     min-height: 600px;
+    padding: 0;
 }
 
 .movie-card {

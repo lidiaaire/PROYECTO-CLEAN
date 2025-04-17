@@ -12,6 +12,12 @@
     margin: 0 auto;
 }
 
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
 /* IMAGEN Y TYLER PERRY´S */
 
 .principal-page {
