@@ -58,6 +58,10 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
 
@@ -88,7 +92,7 @@
     padding: 20px;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent 60%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.45) 60%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -98,9 +102,8 @@
 }
 
 .news-card9:hover .overlay9 {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent 60%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.55) 60%);
 }
-
 
 .category9 {
     color: #ffae42;
@@ -117,9 +120,36 @@
     color: white;
     line-height: 1.3;
 }
-
+.meta9 {
+    font-size: 11px;
+    color: #ccc;
+}
 .overlay9 .meta9 {
     font-size: 11px;
     color: #ccc;
 }
 
+.section9-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn9 {
+    background-color: red;
+    color: white;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Roboto Condensed", sans-serif;
+    border-radius: 2px;
+}
+
+.btn9:hover {
+    background-color: #c10000;
+}
