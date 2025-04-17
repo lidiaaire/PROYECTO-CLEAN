@@ -1,0 +1,125 @@
+.section9 {
+    position: relative;
+    background-color: #ffffff;
+    padding: 80px 0;
+    font-family: "Roboto Condensed", sans-serif;
+    top: -762px;
+}
+
+.container9 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+.section9-header {
+    margin-bottom: 30px;
+}
+
+.section9-header h2 {
+    color: black;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section9-header .line9 {
+    width: 30px;
+    height: 2px;
+    background-color: red;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section9-header p {
+    color: grey;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+  /* GRID */
+.news-grid9 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.news-card9 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    height: 100%;
+}
+
+.news-card9 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+  /* BLOQUE GRANDE */
+.news-card9.big {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    min-height: 550px;
+}
+
+  /* PEQUEÑAS */
+.news-card9.small {
+    min-height: 260px;
+}
+
+.news-card9.small.wide {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    min-height: 260px;
+}
+
+  /* OVERLAY OSCURO */
+.overlay9 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent 60%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 1;
+    transition: background 0.3s ease;
+}
+
+.news-card9:hover .overlay9 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent 60%);
+}
+
+
+.category9 {
+    color: #ffae42;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.overlay9 h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: white;
+    line-height: 1.3;
+}
+
+.overlay9 .meta9 {
+    font-size: 11px;
+    color: #ccc;
+}
+

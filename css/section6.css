@@ -1,10 +1,7 @@
 .section6 {
         position: relative;
         top: -762px;
-<<<<<<< HEAD
         padding: 40px 258px; /* el mismo padding que tu header */
-=======
->>>>>>> 2375ea6c69ec2abfb7ee020f5b3887bd0c24a60e
         padding: 80px 0;
         background-color: white;
         height: 900px;
@@ -185,3 +182,4 @@
 
 .movie-card6 p:hover {
         color: red;
+}
