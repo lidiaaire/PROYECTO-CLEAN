@@ -1,11 +1,17 @@
 .section6 {
         position: relative;
         top: -762px;
-        padding: 40px 258px; /* el mismo padding que tu header */
+        padding: 80px 0;
         background-color: white;
         height: 900px;
 }
 
+.container6 {
+        max-width: 1200px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0 30px; /* para igualar con section7 y section8 si lo usas */
+}
 .section6-header {
         position: relative;
         bottom: -90px;

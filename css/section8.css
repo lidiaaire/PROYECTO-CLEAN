@@ -16,10 +16,12 @@
 }
 
 .section8-header {
+    text-align: left;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .section8-header h2 {
@@ -31,11 +33,11 @@
 }
 
 .section8-header .line8 {
-    display: inline-block;
+    display: block;
     width: 30px;
     height: 2px;
     background-color: red;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .section8-header p {
@@ -46,13 +48,13 @@
 
 .born-grid8 {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .born-card8 {
-    width: 180px;
+    width: 170px;
     text-align: center;
 }
 
