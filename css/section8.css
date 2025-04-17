@@ -16,12 +16,17 @@
 }
 
 .section8-header {
+    text-align: left;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 50px;
+<<<<<<< HEAD
     text-align: left;
     position: relative;
+=======
+>>>>>>> 2375ea6c69ec2abfb7ee020f5b3887bd0c24a60e
 }
 
 .section8-header h2 {
@@ -33,7 +38,7 @@
 }
 
 .section8-header .line8 {
-    display: inline-block;
+    display: block;
     width: 30px;
     height: 2px;
     background-color: red;
@@ -50,7 +55,11 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+<<<<<<< HEAD
     justify-content: space-between
+=======
+    justify-content: space-between;
+>>>>>>> 2375ea6c69ec2abfb7ee020f5b3887bd0c24a60e
 }
 
 .born-card8 {

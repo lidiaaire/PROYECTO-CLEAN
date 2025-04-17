@@ -14,3 +14,19 @@ a {
     text-decoration: none;
 }
 
+.container6,
+.container7,
+.container8 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.section6,
+.section7,
+.section8 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
