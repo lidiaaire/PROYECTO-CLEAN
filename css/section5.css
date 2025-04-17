@@ -6,6 +6,7 @@
     text-align: center;
     color: #fff;
 }
+
 .container5 {
     max-width: 1200px;
     margin: 0 auto;
@@ -16,8 +17,10 @@
 .testimonials-container {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    align-items: flex-start;
+    gap: 80px;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
 
@@ -81,5 +84,3 @@
     display: block;
     opacity: 0.9;
 }
-
-

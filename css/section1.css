@@ -1,5 +1,5 @@
 /* HOMBRE + SIDEBAR + TYLER PERRY´S*/
- 
+
 .section1 {
     position: relative;
     display: flex;
@@ -15,7 +15,7 @@
 .container1 {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 10px 454px;
     box-sizing: border-box;
 }
 /* IMAGEN Y TYLER PERRY´S */
