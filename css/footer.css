@@ -1,0 +1,92 @@
+.footer {
+    /*top: -762px;
+    position: relative;*/
+    background-color: #15181d;
+    color: white;
+    padding: 60px 454px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 180px;
+}
+
+.logo-col h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-col h3 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.line-footer {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: red;
+    margin-left: 8px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: red;
+}
+
+.newsletter-text {
+    color: #999;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.arrow-footer {
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons i {
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: red;
+}
