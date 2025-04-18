@@ -10,20 +10,22 @@
     position: relative;
     background-color: #F2F2F2;
 }
+
 .container2 {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px 454px; 
+    padding: 10px 454px;
     box-sizing: border-box;
 }
-.nav-layout-box{
+
+.nav-layout-box {
     bottom: 380px;
     position: absolute;
     max-width: 1000px;
     width: 1000px;
 }
-/* RECENT/MOST/BEST */
 
+/* RECENT/MOST/BEST */
 .category {
     width: 100%;
     margin-bottom: 6%;
@@ -31,15 +33,33 @@
     font-size: 9px;
     font-weight: bold;
     letter-spacing: 1px;
-    font-family: "roboto condensed" ,sans-serif;
+    font-family: "roboto condensed", sans-serif;
 }
 
 .category span {
     margin: 4px;
 }
 
-/*PELICULAS*/
+.category button {
+    background: none;
+    border: none;
+    color: #A8A8A8;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: "roboto condensed", sans-serif;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.category button:hover {
+    color: white;
+}
 
+.category button:first-child {
+    color: white;
+}
+
+/* PELICULAS */
 .trailer-movie {
     position: absolute;
     max-width: 1000px;
@@ -58,17 +78,50 @@
     position: relative;
     top: -107px;
 }
+
 .photos-separation {
     position: relative;
     width: 176px;
     height: 240px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .photos-separation img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+
+/* Ícono de reproducción centrado en cada imagen */
+.photos-separation::after {
+    content: '\f04b'; /* Icono play de Font Awesome */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9); /* Blanco casi completo */
+    background-color: rgba(255, 255, 255, 0.15); /* Muy sutil */
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+}
+
+/* Al pasar el ratón, solo se reafirma el icono */
+.photos-separation:hover::after {
+    background-color: rgba(255, 255, 255, 0.3); /* Un poco más visible */
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* El fondo de la imagen no se oscurece al hacer hover */
+.photos-separation:hover .overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
 }
 
 .same-size {
@@ -79,8 +132,7 @@
     display: block;
 }
 
-/*TEXTO DE LA FOTO*/
-
+/* TEXTO DE LA FOTO */
 .overlay {
     position: absolute;
     bottom: 0;
@@ -96,6 +148,7 @@
     align-items: start;
     height: 100%;
     text-align: start;
+    z-index: 1;
 }
 
 .overlay h3 {
@@ -115,8 +168,17 @@
     gap: 5px;
 }
 
-/*PUNTOS ROJOS DESPUES DE IMAGENES*/
+.overlay a {
+    color: #A8A8A8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
+.overlay a:hover {
+    color: white;
+}
+
+/* PUNTOS ROJOS DESPUES DE IMAGENES */
 .carousel-dots {
     position: absolute;
     text-align: center;
@@ -134,6 +196,7 @@
     cursor: pointer;
 }
 
-.dot.active, .dot:hover  {
+.dot.active,
+.dot:hover {
     background-color: red;
 }

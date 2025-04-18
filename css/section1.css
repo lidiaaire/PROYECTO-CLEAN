@@ -69,23 +69,26 @@
 .principal-text a {
     display: inline-block;
     margin-left: 3px;
-    margin-top: 30px;
+    margin-top: 18px;
     color: white;
     font-weight: bold;
     text-decoration: none;
     font-size: 11px;
+    transition: color 0.3s ease;
 }
 
 /* FLECHA ROJA READ MORE */
-.principal-text a::after{
-    content: " →"; 
-    color: red; 
+.principal-text a::after {
+    content: " →";
+    color: red;
     font-weight: bold;
-    margin-left: 5px; 
+    margin-left: 5px;
+    transition: color 0.3s ease;
 }
 
 .principal-text a:hover {
-    text-decoration: underline;
+    color: red;              /* Cambia el texto principal a rojo */
+    text-decoration: none;   /* Asegura que no se subraye */
 }
 
 .content-container {
@@ -161,4 +164,9 @@
     color: gray;
     font-size: 11px;
     font-family: "Roboto Condensed" , sans-serif;
+}
+
+.news-item:hover .news-text p {
+    color: gray;
+    transition: color 0.3s ease;
 }
